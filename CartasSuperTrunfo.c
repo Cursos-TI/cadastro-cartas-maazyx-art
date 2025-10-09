@@ -19,6 +19,7 @@
       float pib2 = 105.83;
       int pontos_turisticos2 = 15;
 
+          
       char estado3 = 'C';
       char cod_carta3[4] ="C01";
       char nome_cidade3[30] = "Salvador";
