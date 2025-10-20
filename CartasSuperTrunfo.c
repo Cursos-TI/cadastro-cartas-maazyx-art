@@ -21,7 +21,7 @@ int main()
     pib1 = 77370000;
     pontos_turisticos1 = 25;
     densidade_popu1 = (float) populacao1 / area1;
-    pibpercapta1 = (float)(pib1 / populacao1);
+    pibpercapta1 = (float) pib1 / populacao;
   
     /*carta 2*/
 
