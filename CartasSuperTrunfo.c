@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main(){
+int main()
+{
 	/*cartas*/
 
 	/*carta 1*/
@@ -11,14 +12,18 @@ int main(){
 	float area1;
 	float pib1;
 	int pontos_turisticos1;
+    float densidade_popu1;
+	float pibpercapta1;
 
-	estado1 = 'A';
-	populacao1 = 1291784;
-	area1 = 318;
-	pib1 = 77370000;
-	pontos_turisticos1 = 25;
-
-	/*carta 2*/
+    estado1 = 'A';
+    populacao1 = 1291784;
+    area1 = 318;
+    pib1 = 77370000;
+    pontos_turisticos1 = 25;
+    densidade_popu1 = (float) populacao1 / area1;
+    pibpercapta1 = (float)(pib1 / populacao1);
+  
+    /*carta 2*/
 
 	char estado2;
 	char cod_carta2[4]= "B01";
@@ -27,14 +32,18 @@ int main(){
 	float area2;
 	float pib2;
 	int pontos_turisticos2;
+    float densidade_popu2;
+	float pibpercapta2;
 
-	estado2 = 'B';
-	populacao2 = 2315560;
-	area2 = 331;
-	pib2 = 105000000;
-	pontos_turisticos2=30;
+    estado2 = 'B';
+    populacao2 = 2315560;
+    area2 = 331;
+    pib2 = 105000000;
+    pontos_turisticos2=30;
+    densidade_popu2 = (float)populacao2 / area2;
+    pibpercapta2 = (float)pib2 / populacao2;
 
-	printf("***Buscando informações sobre as cartas***\n");
+    printf("***Buscando informações sobre as cartas***\n");
 
 	printf("***carta 1***\n");
 
@@ -94,6 +103,8 @@ int main(){
 		printf("Area:%.2f  km²\n", area1);
 		printf("Pib: %.2f\n", pib1);
 		printf("pontos turisticos: %d\n", pontos_turisticos1);
+        printf("densidade populacional: %.2f hab/km²\n", densidade_popu1);
+	    printf("pib per capta: %.2f reais\n", pibpercapta1);
 
 		printf("***carta 2***\n");
 		printf("Estado: %c\n", estado2);
@@ -103,8 +114,8 @@ int main(){
 		printf("Area:%.2f  km²\n", area2);
 		printf("Pib: %.2f\n", pib2);
 		printf("pontos turisticos: %d\n", pontos_turisticos2);
+        printf("densidade populacional: %.2f hab/km²\n", densidade_popu2);
+	    printf("pib per capta: %.2f reais\n", pibpercapta2);
 
-		return 0;
-
-
+        return 0;
 }
